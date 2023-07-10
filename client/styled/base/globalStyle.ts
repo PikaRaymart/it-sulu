@@ -61,7 +61,7 @@ const globalStyle = createGlobalStyle`
   }
   /* Font Families */
   body {
-    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-family: 'Sora', sans-serif;
     min-height: 100vh;
     margin: 0 auto;
     outline: none;
@@ -93,6 +93,10 @@ const globalStyle = createGlobalStyle`
     width: 1px;
   }
   
+  body {
+    background-color: grey;
+  }
+
   @media (prefers-reduced-motion: reduce) {
     * {
       animation-duration: 0.01ms !important;

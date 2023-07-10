@@ -77,7 +77,7 @@ const globalStyle = createGlobalStyle`
   input,
   textarea {
     &:focus-visible {
-      outline: 2px dashed ${ ({ theme }) => theme.colors.outline };
+      outline: 2px dashed #f57c00;
       outline-offset: 1px;
     }
   }
@@ -91,10 +91,6 @@ const globalStyle = createGlobalStyle`
     padding: 0;
     position: absolute;
     width: 1px;
-  }
-
-  body {
-    background-color: ${ ({ theme }) => theme.colors.body };
   }
   
   @media (prefers-reduced-motion: reduce) {

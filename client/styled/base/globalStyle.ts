@@ -82,6 +82,13 @@ const globalStyle = createGlobalStyle`
     }
   }
 
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: 'Syne', sans-serif;
+  }
+
   .sr-only {
     border: 0;
     clip: rect(0 0 0 0);
@@ -91,10 +98,6 @@ const globalStyle = createGlobalStyle`
     padding: 0;
     position: absolute;
     width: 1px;
-  }
-  
-  body {
-    background-color: grey;
   }
 
   @media (prefers-reduced-motion: reduce) {

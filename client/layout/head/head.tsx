@@ -13,7 +13,7 @@ const HTMLHead = () =>{
       <meta name="keywords" content="IT, iPhiTech" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       {/* change title */}
-      <title>ITSulu | Technology</title>
+      <title>IT Sulu | Technology</title>
     </Head>
   )
 }

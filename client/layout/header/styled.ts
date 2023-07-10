@@ -105,7 +105,9 @@ export const HeaderWrapper = styled.header`
   ${ customBreakpoint(1200, `
     background-color: transparent;
     border-bottom: 0;
+    inset: 0 0 auto 0;
     max-width: ${ rem(1200) };
     margin: 0 auto;
+    position: absolute;
   `) }
 `

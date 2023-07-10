@@ -14,7 +14,7 @@ const globalStyle = createGlobalStyle`
   *,
   *::before,
   *::after {
-    box-sizing: inherit;
+    box-sizing: border-box;
   }
   a {
     color: inherit;

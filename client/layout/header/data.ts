@@ -27,7 +27,7 @@ export const navbarData: NavbarData[] = [
         link: "#"
       },
       {
-        title: "Team membere",
+        title: "Team members",
         link: "#"
       },
       {

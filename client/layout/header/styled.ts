@@ -5,6 +5,10 @@ import { styled } from "styled-components";
 export const Navlist = styled.ul`
   line-height: 1.7;
   text-align: center;
+
+  ${ customBreakpoint(1200, `
+    display: flex;
+  `) }
 `
 
 export const Navbar = styled.nav`
@@ -20,6 +24,12 @@ export const Navbar = styled.nav`
   position: absolute;
   visibility: hidden;
   width: 100%;
+
+  ${ customBreakpoint(1200, `
+    all: revert;
+    color: #FFFFFF;
+    font-size: ${ rem(15) };
+  `) }
 `
 
 export const NavbarTrigger = styled.button`

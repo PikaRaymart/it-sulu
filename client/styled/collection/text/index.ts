@@ -4,6 +4,32 @@ import {
   rem } from "../../functions";
 
 
+export const CustomedLink = styled.div`
+  margin-bottom: ${ rem(30) };
+
+  a {
+    align-items: center;
+    color: #121820;
+    display: inline-flex;
+    font-family: Syne,sans-serif;
+    font-weight: 600;
+
+    i {
+      align-items: center;
+      background-color: #f57c00;
+      border-radius: 50%;
+      display: flex;
+      color: #fff;
+      font-size: 12px;
+      height: 35px;
+      justify-content: center;
+      margin-left: 15px;
+      transition: .2s cubic-bezier(0, 0, .3642, 1);
+      width: 35px;
+    }
+  }
+`
+
 export const HeadingTwo = styled.h2`
   font-size: ${ fluid(29, 4.2, 42) };
   margin-bottom: ${ rem(30) };

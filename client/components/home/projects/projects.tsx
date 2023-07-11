@@ -1,5 +1,7 @@
 import { Container } from "@/client/styled/collection/containers"
-import { HeadingTwo } from "@/client/styled/collection/text"
+import { 
+  CustomedLink, 
+  HeadingTwo } from "@/client/styled/collection/text"
 import { projectsData } from "./data"
 import Project from "./project/project"
 import { 
@@ -8,7 +10,10 @@ import {
 import '@splidejs/react-splide/css/core';
 import { 
   Header, 
+  LinksContainer, 
   ProjectsWrapper } from "./styled"
+import Link from "next/link"
+import { BorderedButton } from "@/client/styled/collection/button"
 
 
 const Projects = () =>{
@@ -42,9 +47,19 @@ const Projects = () =>{
               data={ project } />
           )) }
         </SplideTrack>
+        <LinksContainer>
+          <CustomedLink>
+            <Link href="#">
+              View All Cases <i className="fas fa-arrow-right"></i>
+            </Link>
+          </CustomedLink>
+          <BorderedButton 
+            as="a"
+            color="#121820">Get Started</BorderedButton>
+        </LinksContainer>
       </Container>
     </ProjectsWrapper>
-    </Splide>
+  </Splide>
   )
 }
 

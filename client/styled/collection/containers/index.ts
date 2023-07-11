@@ -12,11 +12,16 @@ export const SectionWrapper = styled.div`
   `) }
 `
 
-export const RowTablet = styled.div`
+type RowTabletProps = {
+  justifyContent?: string
+}
+
+export const RowTablet = styled.div<RowTabletProps>`
 
   ${ breakpoint("tablet", `
     align-items: flex-start;
     display: flex;
+    
   `) }
 `
 

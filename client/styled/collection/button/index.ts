@@ -14,7 +14,7 @@ const Button = styled.button`
 `
 
 type BorderedButtonProps = {
-  color: "white" | "orange"
+  color: "white" | "orange" | string
 }
 
 export const BorderedButton = styled(Button)<BorderedButtonProps>`

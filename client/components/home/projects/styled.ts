@@ -1,8 +1,28 @@
-import { SectionWrapper } from "@/client/styled/collection/containers";
-import { HeadingTwo } from "@/client/styled/collection/text";
-import { breakpoint, fluid, rem } from "@/client/styled/functions";
+import { BorderedButton } from "@/client/styled/collection/button";
+import { 
+  RowTablet, 
+  SectionWrapper } from "@/client/styled/collection/containers";
+import { 
+  CustomedLink, 
+  HeadingTwo } from "@/client/styled/collection/text";
+import { 
+  breakpoint, 
+  fluid, 
+  rem } from "@/client/styled/functions";
 import { styled } from "styled-components";
 
+
+export const LinksContainer = styled(RowTablet)`
+
+  ${ BorderedButton } {
+    margin-bottom: ${ rem(30) };
+  }
+
+  ${ breakpoint("tablet", `
+    align-items: center;
+    justify-content: space-between;
+  `) }
+`
 
 export const Header = styled.div`
   margin-bottom: ${ rem(60) };

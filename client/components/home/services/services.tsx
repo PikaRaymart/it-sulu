@@ -16,8 +16,8 @@ import { DividerWrapper } from "../../collections/divider/styled"
 const Services = () =>{
 
   return (
-    <SectionWrapper>
-      <Container>
+    <Container>
+      <SectionWrapper>
         <HeadingTwo>How We Can <span>Help You</span></HeadingTwo>
         <ServicesWrapper>
           <ServiceBlock>
@@ -115,9 +115,9 @@ const Services = () =>{
             </ServiceList>
           </ServiceBlock>
         </ServicesWrapper>
-        <DividerWrapper />
-      </Container>
     </SectionWrapper>
+    <DividerWrapper />
+  </Container>
   )
 }
 

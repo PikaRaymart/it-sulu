@@ -96,5 +96,15 @@ export const ServicesWrapper = styled.div`
 
   ${ breakpoint("desktop", `
     display: flex;
+    position: relative;
+
+    &::after {
+      content: "";
+      background: url("/images/services-bg.svg") no-repeat center center/ 100% 100%;
+      height: ${ rem(140) };
+      inset: -${ rem(208) } ${ rem(160) } auto auto;
+      position: absolute;
+      width: ${ rem(220) };
+    }
   `) }
 `

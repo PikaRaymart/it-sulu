@@ -71,6 +71,10 @@ const globalStyle = createGlobalStyle`
   body.no-scroll {
     overflow: hidden;
   }
+
+  body {
+    overflow-x: hidden;
+  }
   
   a,
   button,

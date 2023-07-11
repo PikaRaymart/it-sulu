@@ -4,6 +4,14 @@ import {
   rem } from "../../functions";
 
 
+export const SectionWrapper = styled.div`
+  padding: ${ rem(60) } 0 ${ rem(30) };
+
+  ${ breakpoint("desktop", `
+    padding: ${ rem(120) } 0 ${ rem(90) };
+  `) }
+`
+
 export const RowTablet = styled.div`
 
   ${ breakpoint("tablet", `

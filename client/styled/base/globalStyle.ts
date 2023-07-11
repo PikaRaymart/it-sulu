@@ -86,7 +86,10 @@ const globalStyle = createGlobalStyle`
   h2,
   h3,
   h4 {
+    color: #121820;
     font-family: 'Syne', sans-serif;
+    font-weight: 600;
+    line-height: 140%;
   }
 
   .sr-only {

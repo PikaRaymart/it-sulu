@@ -48,6 +48,7 @@ export const MainHeading = styled.h1`
 `
 
 export const PopupsContainer = styled.div`
+  display: none;
 
   ${ customBreakpoint(1200, `
     display: block;

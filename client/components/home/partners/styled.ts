@@ -43,7 +43,11 @@ export const Link = styled.a`
 `
 
 export const PartnersItem = styled.li`
-  flex: 0 0 33.33%;
+  flex: 0 0 50%;
+
+  ${ breakpoint("desktop", `
+    flex: 0 0 33.333%;
+  `) }
 
   ${ customBreakpoint(1200, `
     flex: 0 0 ${ rem(150) };

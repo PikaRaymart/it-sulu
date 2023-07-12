@@ -21,7 +21,7 @@ export const RowTablet = styled.div<RowTabletProps>`
   ${ breakpoint("tablet", `
     align-items: flex-start;
     display: flex;
-    
+    flex-wrap: wrap;
   `) }
 `
 

@@ -72,7 +72,6 @@ export const Header = styled.div`
       height: ${ rem(140) };
       inset: -${ rem(60) } auto auto 50%;
       position: absolute;
-      transform: translateX(-50%);
       width: ${ rem(220) };
     }
 
@@ -89,10 +88,17 @@ export const Header = styled.div`
   `) }
 `
 
-export const ProjectsWrapper = styled(SectionWrapper)`
+export const NewsWrapper = styled(SectionWrapper)`
 
-  .splide__track {
-    margin-bottom: ${ fluid(60, 10, 90) };
-    overflow: visible;
+  .splide {
+
+    &__slide {
+      max-width: 100%;
+    }
+
+    &__track {
+      margin-bottom: ${ fluid(60, 10, 90) };
+      overflow: visible;
+    }
   }
 `

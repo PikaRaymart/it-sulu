@@ -4,6 +4,23 @@ import {
   rem } from "../../functions";
 
 
+export const SectionTag = styled.p`
+  color: #121820;
+  margin-bottom: ${ rem(30) };
+  padding-left: ${ rem(15) };
+  position: relative;
+
+  &::before {
+    content: "";
+    border-radius: 50%;
+    background-color: #f57c00;
+    height: 7px;
+    inset: ${ rem(9) } auto auto 0;
+    position: absolute;
+    width: 7px;
+  }
+`
+
 export const CustomedLink = styled.div`
   margin-bottom: ${ rem(30) };
 

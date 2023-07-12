@@ -3,7 +3,7 @@ import {
   customBreakpoint,
   fluid, 
   rem } from "@/client/styled/functions";
-import { styled } from "styled-components";
+import { css, styled } from "styled-components";
 
 
 export const Author = styled.p`
@@ -56,9 +56,33 @@ export const Image = styled.img`
   `) }
 `
 
-export const ProjectWrapper = styled.div`
+type ProjectWrapperProps = {
+  $isVertical?: boolean,
+  $isReversed?: boolean
+}
+
+export const ProjectWrapper = styled.div<ProjectWrapperProps>`
 
   ${ breakpoint("tablet", `
     max-width: ${ rem(555) };
   `) }
+
+  ${ ({ $isVertical, $isReversed }) => $isVertical && css`
+
+    ${ customBreakpoint(1200, `
+        ${ $isReversed ? `
+          display: flex;
+          flex-direction: column-reverse;
+        `: "" }
+        max-width: ${ rem(315) };
+
+        ${ TextContainer } {
+          display: block;
+        }
+
+        ${ Author } {
+          display: none;
+        }
+    `) }
+  ` }
 `

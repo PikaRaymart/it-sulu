@@ -14,7 +14,6 @@ import {
   LinksContainer, 
   NewsWrapper } from "./styled"
 import Link from "next/link"
-import { BorderedButton } from "@/client/styled/collection/button"
 
 
 const Projects = () =>{
@@ -48,7 +47,7 @@ const Projects = () =>{
         <SplideTrack>
           { projectsData.map((project, index) => (
             <Thinking
-              key={ "projects-"+index }
+              key={ "news-"+index }
               data={ project } />
           )) }
         </SplideTrack>

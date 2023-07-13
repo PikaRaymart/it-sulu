@@ -7,6 +7,7 @@ import { HomeProjectsSection } from "@/client/components/home/projects";
 import { HomeServicesSection } from "@/client/components/home/services";
 import { HomeSkillsSection } from "@/client/components/home/skill";
 import { MainHomeWrapper } from "@/client/components/home/styled";
+import { HomeTestimonialsSection } from "@/client/components/home/testimonials";
 import { NextPage } from "next";
 
 
@@ -22,6 +23,7 @@ const Homepage: NextPage = () =>{
       <HomeCollaborationSection />
       <HomeSkillsSection />
       <HomeNewsSection />
+      <HomeTestimonialsSection />
     </MainHomeWrapper>
   )
 }
